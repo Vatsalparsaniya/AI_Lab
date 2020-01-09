@@ -7,12 +7,16 @@
     y= 1./(1+alpha*exp(-x));
     plot(x,y,"p");
   
+  ![](Images/Sigmoid_1.PNG)
+  
 ## Rectified Linear Unit
 
     alpha = 2
     x=-100:1:100;
     y=max(0,alpha*x);
     plot(x,y,"r");
+    
+![](Images/Relu_1.PNG)
 
 ## Leaky Relu
  
@@ -28,6 +32,7 @@
     end
     plot(x,y);
 
+![](Images/Leaky_RELU_1.PNG)
 
 ## Exponential Linear Unit
     
@@ -43,6 +48,7 @@
     end
     plot(x,y);
 
+![](Images/Exponential_linear_Unit.PNG)
 
 ## Tanh
 
@@ -57,3 +63,5 @@
         end
     end
     plot(x,y);
+    
+![](Images/Tanh.PNG)
