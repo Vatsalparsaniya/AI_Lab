@@ -3,6 +3,11 @@
 
 ### Load data
 
+## Exercise 1: 
+Download and Study both (PIMA-INDIAN-DIABETES, IRIS) dataset files from the LMS
+
+● Observe and comment about the features/values of dataset.
+
       --> data = csvRead('pima-indians-diabetes.csv');
       --> number_of_time_pregnant = data(:,1);
       --> glucose = data(:,2);
