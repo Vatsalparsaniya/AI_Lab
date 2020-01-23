@@ -8,6 +8,10 @@
 Let w1 and w2 be the weights of a perceptron (i.e. simple neural network) with two inputs x1
 and x2. Let AND(x1, x2) be the "logical and" function, let OR(x1, x2) be the "logical or" 
 function and let NOT(x) be the logical NOT function.
+Plot constellation diagram for these logic gates. Are the data points linearly separable? If 
+yes, what is its significance with respect to perceptron?
+
+![](Logic-Gates.png)
 
 # Exercise II
 Design three single-neuron models which correspond to the logical AND, OR and NOT 
@@ -37,4 +41,5 @@ Can we design a model that implements XOR(x1, x2) logic function with single neu
 Justify your answer with necessary decision graph.
 ### Ans
 no we can't 
-!()[XOR_Gate.png]
+
+![XOR_Gate.png](XOR_Gate.png)
