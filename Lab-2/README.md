@@ -34,8 +34,66 @@ functions respectively. Assume threshold activation function at the output of th
                end
           end
       end
+      
+  ![](Ex_2_And_gate.png)
 
+### 2)
 
+      X = [[0 0] [0 1] [1 0] [1 1]]
+      Y = [0 0 0 1]
+
+      figure(1);
+      scatter([0 0 1 1],[0 1 0 1],"fill", "s");
+      xlabel('x1');
+      ylabel('x2');
+
+      // w2*x2 = w1*(-1)*x1 + 1.5
+
+      for x1 = linspace(0,2,10)
+          for x2 = linspace(0,2,10)
+              for w1 = linspace(0,1,10)
+                  for w2 = linspace(0,1,10)
+                      if  w1*x1 + w2*x2 > 1.5 then
+                          if (1.5/w1 <2 )&&(1.5/w2<2) then
+                              plot([0 1.5/w1],[1.5/w2 0]);
+                          end
+                      end
+                  end
+              end
+          end
+      end
+      
+ ![](And_2.png)
+ 
+ 
+ ## OR Gate
+      X = [[0 0] [0 1] [1 0] [1 1]]
+      Y = [0 1 1 1]
+
+      figure(1)
+      p = scatter([ 0 0 1 1],[ 0 1 0 1],"fill", "x")
+      xlabel('x1');
+      ylabel('x2');
+
+      // w2*x2 = w1*(-1)*x1 + 1.5
+
+      for x1 = linspace(0,2,5)
+          for x2 = linspace(0,2,5)
+              for w1 = linspace(0,10,10)
+                  for w2 = linspace(0,10,10)
+                      if  w1*x1 + w2*x2 < 1 then
+                          if (1/w1 <1 )&&(1/w2<1) then
+                              plot([0 1/w1],[1/w2 0]);
+                          end
+                      end
+                  end
+              end
+          end
+      end
+      
+ ![](OR_2.png)
+ 
+ 
 # Exercise III
 Can we design a model that implements XOR(x1, x2) logic function with single neuron? 
 Justify your answer with necessary decision graph.
