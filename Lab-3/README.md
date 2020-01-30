@@ -19,6 +19,40 @@ Download and Study both (PIMA-INDIAN-DIABETES, IRIS) dataset files from the LMS
       --> Age = data(:,8);
       --> class_output = data(:,9);
 
+● Iris_dataset One Hot Encoding
+
+      xlabel('ID');
+      ylabel('SepalLengthCm');
+      subplot(4,1,2);plot(ID,SepalWidthCm);
+      xlabel('ID');
+      ylabel('SepalWidthCm');
+      subplot(4,1,3);plot(ID,PetalLengthCm);
+      xlabel('ID');
+      ylabel('PetalLengthCm');
+      subplot(4,1,4);plot(ID,PetalWidthCm);
+      xlabel('ID');
+      ylabel('PetalWidthCm');
+
+      Iris_setosa = zeros(length(ID),1);
+      Iris_versicolor = zeros(length(ID),1);
+      Iris_virginica = zeros(length(ID),1);
+
+      for i=1:length(ID)
+          if Species(i) == 'Iris-setosa'
+              Iris_setosa(i) = 1;
+          end
+          if Species(i) == 'Iris-versicolor'
+              Iris_versicolor(i) = 1;
+          end
+          if Species(i) == 'Iris-virginica'
+              Iris_virginica(i) = 1;
+          end
+      end
+
+      M = [ID,SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm,Iris_setosa,Iris_versicolor,Iris_virginica]
+      csvWrite(M,'One-Hot-Encoding_Iris.csv',',');
+     
+   ![](Images/Iris_data_1.PNG)
 
 ## Exercise 2: 
 Implement an ANN feed-forward network and evaluate its Accuracy for Pima-Indian-Diabetes dataset. 
