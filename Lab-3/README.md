@@ -56,7 +56,15 @@ Download and Study both (PIMA-INDIAN-DIABETES, IRIS) dataset files from the LMS
 
 ## Exercise 2: 
 Implement an ANN feed-forward network and evaluate its Accuracy for Pima-Indian-Diabetes dataset. 
+
 ● Tweak parameters to improve accuracy (like learning rate and training cycles ). Report the output accuracy.
+
+
+
+## Exercise 3: 
+Implement an ANN feed-forward backpropagation network and evaluate its Accuracy for Iris Dataset.
+
+● Tweak parameters to improve accuracy (like learning rate , minimum Error and training cycles ). Calculate and print the mean accuracy.
 
       data = csvRead('One-Hot-Encoding_Iris.csv',[],[],'string');
       ID = strtod(data(:,1));
@@ -97,10 +105,6 @@ Implement an ANN feed-forward network and evaluate its Accuracy for Pima-Indian-
 ### output
  acc : 91.581213
 
-## Exercise 3: 
-Implement an ANN feed-forward backpropagation network and evaluate its Accuracy for Iris Dataset.
-
-● Tweak parameters to improve accuracy (like learning rate , minimum Error and training cycles ). Calculate and print the mean accuracy.
 
 ## Exercise 4: 
 Visit [http://playground.tensorflow.org](http://playground.tensorflow.org) and create your own ANN for classifying Non-linear pattern.
