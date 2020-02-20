@@ -1,3 +1,4 @@
+
 pima = csvRead('Iris_and_pima-Indian-diabetes_dataset\pima-indians-diabetes.csv');
 
 x_temp = pima(:, 1:8);
@@ -130,3 +131,5 @@ while t<=T
     
     t = t+1
 end
+
+
