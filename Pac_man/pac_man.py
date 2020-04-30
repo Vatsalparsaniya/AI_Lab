@@ -62,6 +62,8 @@ if __name__ == "__main__":
 
     graph = {(i+1,j+1):[] for i in range(8) for j in range(8)}
 
+    
+
     for i in range(8):
         for j in range(8):
             if maze[i][j] == "-":
