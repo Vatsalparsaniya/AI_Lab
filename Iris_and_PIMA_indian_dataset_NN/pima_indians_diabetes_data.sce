@@ -91,8 +91,8 @@ while t<=T
     test_loss = ann_sum_of_sqr(y_test_predicted, y_test)/(size(X)(2) - split)
     disp(test_loss,'Testset Loss: ')
     
-    train_accuracy = 1 - ann_sum_of_sqr(y_train_predicted>=0.5,y_train)/split
-    test_accuracy = 1 - ann_sum_of_sqr(y_test_predicted>=0.5,y_test)/(size(X)(2) - split)
+    train_accuracy = 1 - ann_sum_of_sqr(y_train_predicted,y_train)/split
+    test_accuracy = 1 - ann_sum_of_sqr(y_test_predicted,y_test)/(size(X)(2) - split)
     disp(train_accuracy,'Training Accuracy: ')
     disp(test_accuracy,'Test Accuracy: ')
     disp("")
