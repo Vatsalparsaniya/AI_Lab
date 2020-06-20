@@ -52,16 +52,9 @@
 
 ## Tanh
 
-    alpha = 0.5;
-    x=-200:200;
-
-    for i=1:401;
-        if x(i)<0 then
-            y(i) = alpha.*x(i);
-        else
-            y(i)=x(i);
-        end
-    end
-    plot(x,y);
+        clf
+        x=-5:1:5
+        y=((1-exp(-2*x))./(1+exp(-2*x)))
+        plot(x,y)
     
 ![](Images/Tanh.PNG)
